@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,400&display=swap");
+
+:root {
+  /*
+    primary colors
+  */
+  --red-color: hsl(0, 78%, 62%);
+  --cyan-color: hsl(180, 62%, 55%);
+  --orange-color: hsl(34, 97%, 64%);
+  --blue-color: hsl(212, 86%, 64%);
+
+  /*
+    neutral colors
+  */
+
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --main-bg-color: hsl(0, 0%, 98%);
+  --cards-bg-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+header {
+  width: 80%;
+  margin: 23% auto 20%;
+  text-align: center;
+}
+
+.main-title {
+  font-weight: 200;
+  color: var(--very-dark-blue);
+  font-size: 1.4rem;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+
+#our-ai {
+  color: var(--grayish-blue);
+  margin-top: 5%;
+}
+
+.card {
+  background-color: var(--cards-bg-color);
+  width: 75%;
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto 8%;
+  padding: 4%;
+  box-shadow: 5px 8px 20px -8px var(--grayish-blue);
+  text-align: right;
+  line-height: 1.4rem;
+}
+
+.card h3 {
+  color: var(--very-dark-blue);
+  font-size: 1.25rem;
+  text-align: left;
+  padding: 4% 4% 0 4%;
+}
+
+.card p {
+  color: var(--grayish-blue);
+  text-align: justify;
+  font-size: 0.8rem;
+  padding: 3% 10% 0 4%;
+}
+
+.card img {
+  transform: scale(0.9);
+  padding: 8% 2% 2% 2%;
+}
+
+#supervisor {
+  box-shadow: 2px 12px 20px -10px var(--grayish-blue),
+    0 -6.5px 0 -3px var(--cyan-color);
+}
+
+#team-builder {
+  box-shadow: 2px 12px 20px -10px var(--grayish-blue),
+    0 -6.5px 0 -3px var(--red-color);
+}
+
+#karma {
+  box-shadow: 2px 12px 20px -10px var(--grayish-blue),
+    0 -6.5px 0 -3px var(--orange-color);
+}
+
+#calculator {
+  box-shadow: 2px 12px 20px -10px var(--grayish-blue),
+    0 -6.5px 0 -3px var(--blue-color);
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: var(--grayish-blue);
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  box-shadow: none;
+  color: var(--grayish-blue);
+}
+
+@media only screen and (min-width: 800px) {
+  header {
+    width: 40%;
+    margin: 5% auto 4%;
+  }
+
+  .main-title,
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  main {
+    max-width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-col,
+  .central-col,
+  .right-col {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: center;
+    margin: 0 -1.25% 2%;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  main {
+    max-width: 85%;
+  }
+}
