@@ -121,7 +121,7 @@ button:focus {
   position: absolute;
   top: 0;
   transform: translateY(50%);
-  right: 100;
+  right: 100px;
 }
 
 form.error .error-icon {
