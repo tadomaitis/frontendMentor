@@ -48,6 +48,7 @@ body {
   min-height: 200px;
   background-size: cover;
   background-position: center -15px;
+  background-repeat: no-repeat;
 }
 
 article {
