@@ -13,7 +13,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "Poppins", sans-serif;
   color: var(--color-very-ligth-gray);
   background-color: var(--color-black);
@@ -84,10 +84,9 @@ ul li a img {
 
 footer {
   text-align: center;
-  padding: 0.75rem;
+  padding: 2rem;
   position: absolute;
   width: 100%;
-  bottom: 1rem;
   height: 2.5rem;
 }
 
@@ -114,5 +113,9 @@ footer a {
 
   .projects-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    bottom: 1rem;
   }
 }
