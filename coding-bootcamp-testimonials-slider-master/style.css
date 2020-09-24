@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  font-size: 32px;
+  --color-dark-blue: hsl(240, 38%, 20%);  
+  --color-grayish-blue: hsl(240, 18%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.b-testimonial{
+  width: 100%;
+  max-width: 1440px;
+  list-style: none;
+}
+
+.b-testimonial__item {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.b-testimonial__person {
+  width: 100%;
+  background-image: url('./images/pattern-bg.svg');
+  background-size: contain;
+}
+
+.b-testimonial__photo {
+  width: 80%;
+}
+
+.b-testimonial__text {
+  color: var(--color-dark-blue);
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.b-testimonial__depo {
+  line-height: 0.65rem;
+}
+
+.b-testimonial__author {
+  font-size: 0.5rem;
+  font-weight: 700;
+}
+
+.b-testimonial__role {
+  font-size: 0.5rem;
+  font-weight: 500;
+  color: var(--color-grayish-blue);
+}
