@@ -1,0 +1,115 @@
+:root {
+  /* Colors
+
+## Primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* ## Typography
+
+### Body Copy */
+  /* - Font size (name and stats): 18px */
+
+  /* ### Font */
+
+  --fontFamily: 'Kumbh Sans', sans-serif;
+  /* - Weights: 400, 700 */
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--fontFamily);
+}
+
+.body {
+  font-size: 16px;
+  background-color: var(--dark-cyan);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  /* border: 1px solid red; */
+  width: 86%;
+  max-width: 375px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.colored-top {
+  height: 140px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url(./images/bg-pattern-card.svg);
+}
+
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 100px;
+  border: 4px solid white;
+  margin: -50px auto 5px;
+}
+
+.person-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.age {
+  font-weight: 400;
+}
+
+.city {
+  font-size: 0.9rem;
+}
+
+.age,
+.city {
+  color: var(--dark-grayish-blue);
+}
+
+.stats-list {
+  display: flex;
+  list-style: none;
+  padding: 15px 15px 0;
+  border-top: 0.5px solid var(--dark-gray);
+  justify-content: space-evenly;
+}
+
+.stats-list > * {
+  flex-basis: 100%;
+}
+
+.stats-item {
+  text-align: center;
+}
+
+.stat-value {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.stat-type {
+  font-size: 0.65rem;
+  letter-spacing: 0.25ch;
+  color: var(--dark-grayish-blue);
+  margin-top: -10px;
+}
