@@ -5,6 +5,7 @@ window.addEventListener("load", () => {
     { name: "four-card-feature-section" },
     { name: "fylo-data-storage-component" },
     { name: "single-price-grid-component" },
+    { name: "profile-card-component" },
   ];
 
   const projectsList = document.querySelector(".projects-list");
